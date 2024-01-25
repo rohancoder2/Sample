@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROBO DECIMAL TO BINARY CONVERTER</title>
+  <body>
+    HELLO EVERONE TO
+    <body>
+        ROBO DECIMAL TO BINARY CONVERSION 
+    </body>
+  </body>
+  <style>
+    body {
+      font-family: Arial ;
+      text-align: center;
+      margin-top: 50px;
+      color: darkturquoise;
+    }
+
+    #converter {
+      margin: 20px;
+    }
+
+    input {
+      width: 2090px;
+      padding: 19px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 100px 200px;
+      font-size: 16px;
+      cursor: pointer;
+      color:darkgreen;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+<div id="converter">
+  <label for="decimalInput">Enter Decimal Number:</label>
+  <input type="number" id="decimalInput" placeholder="Enter decimal number">
+
+  <button onclick="convertToBinary()">Convert to Binary</button>
+
+  <div id="result"></div>
+</div>
+
+<script>
+  function convertToBinary() {
+    var decimalInput = document.getElementById("decimalInput").value;
+
+    // Check if the input is a valid number
+    if (isNaN(decimalInput)) {
+      alert("Please enter a valid decimal number");
+      return;
+    }
+
+    var binaryResult = (decimalInput >>> 0).toString(2); // Use logical right shift to convert negative numbers
+
+    document.getElementById("result").innerHTML = "Binary: " + binaryResult;
+  }
+</script>
+
+</body>
+</html>
+PLEASE FEEL FREE TO CONTACT US
+- 9123032676
+
+
+<body>
+    EMAL - ROBO@gmail.com
+    TIMING-9 A.M TO 9.PM IST
+</body>
